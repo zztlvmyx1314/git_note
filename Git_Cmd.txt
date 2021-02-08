@@ -1,0 +1,58 @@
+/************************基本命令******************/ 
+ git init // 创建Git仓库
+
+ git log // 查看提交日志
+ git log --graph --pretty=format:"%h %s"
+
+ git add 文件名    // 提交到暂存区
+
+ git add .    // 提交工作区所有文件到暂存区
+  
+  git commit -m 描述文字  // 提交到仓库
+
+  git reflog   // 查看回滚后的提交日志
+
+  git reset --hard 版本号   // 回滚到指定版本
+ 
+   vim 文件名    // 编辑文件
+   
+   touch 文件名  // 创建文件
+
+/*********************分支**********************/
+
+ git branch // 查看所有分支
+ 
+ git branch  分支名  //  创建分支
+
+ git checkout 分支名  // 切换到该分支
+
+ git merge 分支名   // 合并分支
+
+ git branch -d 分支名  // 删除分支
+
+ git checkout -b dev  // 创建并跳转到dev分支
+
+
+
+/*********************GitHub****************/  
+
+git remote add origin https://github.com/zztlvmyx1314/wifi_switch.git  // origin指代远程仓库地址
+
+git push -u origin master  // 将mater分支推送到远程仓库
+
+git clone https://github.com/zztlvmyx1314/wifi_switch.git  // 克隆远程仓库上的代码
+
+git pull origin 分支名  // 获取远程仓库上最新代码
+
+
+/******************************rebase(变基)************************/
+
+git rebase -i 版本号    // 从当前提交记录向上合并
+ 
+git rebase -i HEAD~3    // 从当前最新提交记录找最近3条提交记录合并 
+
+git rebase 分支          //  合并分支使之只有一条主线
+
+git rebase --continue    // 继续合并
+
+
