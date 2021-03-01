@@ -1,0 +1,7 @@
+
+ git checkout -- 文件名   // 撤销工作区的修改(已修改但未提交到暂存区)
+
+git checkout -- *             // 是撤销从上次提交之后所做的所有修改
+
+
+git reset HEAD <file>...    // 取消暂存
